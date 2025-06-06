@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    {
+      "plugin": "ServerAdminToolsDBLog",
+      "enabled": true
+    },
+    {
+      "plugin": "ServerAdminToolsTeamkillAlert",
+      "enabled": true,
+      "channel": "YOUR_DISCORD_CHANNEL_ID_HERE",
+      "ignoreAI": false
+    },
+    {
+      "plugin": "ServerAdminToolsAdminAlert",
+      "enabled": true,
+      "channel": "YOUR_DISCORD_CHANNEL_ID_HERE"
+    },
+    {
+      "plugin": "ServerAdminToolsGameEndAlert",
+      "enabled": true,
+      "channel": "YOUR_DISCORD_CHANNEL_ID_HERE"
+    }
+  ]
+}

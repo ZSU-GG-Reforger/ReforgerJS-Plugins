@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    {
+      "plugin": "GMToolsDBLog",
+      "enabled": true
+    },
+    {
+      "plugin": "GMToolsAlert",
+      "enabled": true,
+      "channel": "YOUR_DISCORD_CHANNEL_ID_HERE",
+      "disableEnterAlerts": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    {
+      "plugin": "FlabbyLogsChatDBLog",
+      "enabled": true
+    },
+    {
+      "plugin": "FlabbyLogsChatAlerts",
+      "enabled": true,
+      "channel": "YOUR_DISCORD_CHANNEL_ID_HERE",
+      "channelFilters": ["Global", "Faction", "Group", "Vehicle", "Local"]
+    },
+    {
+      "plugin": "FlabbyLogsAdminPings",
+      "enabled": true,
+      "channel": "YOUR_DISCORD_CHANNEL_ID_HERE",
+      "channelFilters": ["Global", "Faction", "Group", "Vehicle", "Local"],
+      "ignorePhrases": ["flip", "flipped"],
+      "pingRoles": true,
+      "roles": ["ROLE_ID_1"],
+      "command": "admin"
+    }
+  ]
+}
