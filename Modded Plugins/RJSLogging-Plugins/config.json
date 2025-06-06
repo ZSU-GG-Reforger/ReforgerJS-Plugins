@@ -1,4 +1,22 @@
 {
+  "customParsers": {
+    "rjs-logging": {
+      "enabled": true,
+      "logDir": "/path/to/RJSLogging/events"
+    }
+  },
+  "commands": [
+    {
+      "command": "killhistorywcs",
+      "enabled": false,
+      "commandLevel": 3
+    },
+    {
+      "command": "messagehistorywcs",
+      "enabled": false,
+      "commandLevel": 3
+    }
+  ],
   "plugins": [
     {
       "plugin": "RJS_LogChat",
@@ -43,4 +61,3 @@
     }
   ]
 }
-
