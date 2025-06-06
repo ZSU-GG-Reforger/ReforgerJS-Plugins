@@ -1,0 +1,59 @@
+  "customParsers": {
+    "wcs-commands": {
+      "enabled": false,
+      "logDir": "/path/to/WCS_Commands/events",
+      "fileName": "events.txt"
+    }
+  },
+  "plugins": [
+    {
+      "plugin": "WCS_DBLog",
+      "enabled": false,
+      "requiredMods": "WCS_core, WCS_Commands"
+    },
+    {
+      "plugin": "WCS_DBEvents",
+      "enabled": false,
+      "requiredMods": "WCS_core, WCS_Commands"
+    },
+    {
+      "plugin": "WCS_TKAutokick",
+      "enabled": false,
+      "requiredMods": "GM Tools, WCS_core, WCS_Commands",
+      "teamkillLimit": 4,
+      "timeWindowMinutes": 20,
+      "warningMessage": "Watch your fire, Teamkilling will result in your removal from the server"
+    },
+    {
+      "plugin": "WCS_LogTK",
+      "enabled": false,
+      "requiredMods": "WCS_core, WCS_Commands",
+      "channel": "your-discord-channel-id-here"
+    },
+    {
+      "plugin": "WCS_LogChat",
+      "enabled": false,
+      "requiredMods": "WCS_core, WCS_Commands",
+      "channel": "your-discord-channel-id-here"
+    },
+    {
+      "plugin": "WCS_TK_Punishments",
+      "enabled": false,
+      "requiredMods": "GM Tools, WCS_core, WCS_Commands",
+      "teamkillKickLimit": 4,
+      "logKicks": true,
+      "logKickMessage": "Player was kicked for teamkilling\nReforgerJS Automated System",
+      "warnEveryTK": true,
+      "warningMessage": "Watch your fire, Teamkilling will result in your removal from the server",
+      "enableBMBans": true,
+      "banKickThreshold": 2,
+      "banKickLimit": 14,
+      "BanDuration": 24,
+      "BanReason": "Intentional Teamkilling - banned for {{duration}} - appeal at https://discord.gg/LinkToDiscord",
+      "BanMessage": "Banned for Teamkilling. ReforgerJS Automated System",
+      "BanAutoAddEnabled": false,
+      "BanNativeEnabled": false,
+      "BanOrgWide": true
+    }
+  ]
+}
