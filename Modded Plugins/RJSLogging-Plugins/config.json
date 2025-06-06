@@ -1,0 +1,46 @@
+{
+  "plugins": [
+    {
+      "plugin": "RJS_LogChat",
+      "requiredMods": "RJS Logging",
+      "enabled": false,
+      "channel": "your-discord-channel-id-here"
+    },
+    {
+      "plugin": "RJS_LogTK",
+      "requiredMods": "RJS Logging",
+      "enabled": false,
+      "channel": "your-discord-channel-id-here"
+    },
+    {
+      "plugin": "RJS_DBEvents",
+      "requiredMods": "RJS Logging",
+      "enabled": false
+    },
+    {
+      "plugin": "RJS_DBLog",
+      "requiredMods": "RJS Logging",
+      "enabled": false
+    },
+    {
+      "plugin": "RJS_TK_Punishments",
+      "enabled": false,
+      "requiredMods": "GM Tools, RJS Logging",
+      "teamkillKickLimit": 4,
+      "logKicks": true,
+      "logKickMessage": "Player was kicked for teamkilling\nReforgerJS Automated System",
+      "warnEveryTK": true,
+      "warningMessage": "Watch your fire, Teamkilling will result in your removal from the server",
+      "enableBMBans": true,
+      "banKickThreshold": 2,
+      "banKickLimit": 14,
+      "BanDuration": 24,
+      "BanReason": "Intentional Teamkilling - banned for {{duration}} - appeal at https://discord.gg/LinkToDiscord",
+      "BanMessage": "Banned for Teamkilling. ReforgerJS Automated System",
+      "BanAutoAddEnabled": false,
+      "BanNativeEnabled": false,
+      "BanOrgWide": true
+    }
+  ]
+}
+
